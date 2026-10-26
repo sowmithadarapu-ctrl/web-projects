@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library Management</title>
+    <link rel="stylesheet" href="proj2.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>Digital Library</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#books">Books</a>
+            <a href="#catalog">Catalog</a>
+            <a href="#rules">Rules</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Banner with Background Image -->
+    <section class="banner" id="home">
+        <h2>Welcome to Our Digital Library</h2>
+        <p>Discover Books, Explore Knowledge!</p>
+        <a href="#books" class="btn">Explore Books</a>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-section">
+        <h2>Find Your Favourite Book</h2>
+        <div class="search-box">
+            <input type="text" placeholder="Search books or authors">
+            <select>
+                <option>All Categories</option>
+                <option>Programming</option>
+                <option>Science</option>
+                <option>Literature</option>
+                <option>History</option>
+            </select>
+            <button type="button">Search</button>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories">
+        <h2>Book Categories</h2>
+        <div class="category-grid">
+            <div class="category">Programming</div>
+            <div class="category">Science</div>
+            <div class="category">Literature</div>
+            <div class="category">History</div>
+        </div>
+    </section>
+
+    <!-- Featured Books -->
+    <section id="books">
+        <h2>Featured Books</h2>
+        <div class="book-grid">
+
+            <div class="book-card">
+                <img src="https://placehold.co/180x230/24476b/ffffff?text=Python"
+                     alt="Python book cover">
+                <h3>Python Programming</h3>
+                <p>Author: John Smith</p>
+                <span class="available">Available</span>
+            </div>
+
+            <div class="book-card">
+                <img src="https://placehold.co/180x230/47745b/ffffff?text=Science"
+                     alt="Science book cover">
+                <h3>Introduction to Science</h3>
+                <p>Author: David Brown</p>
+                <span class="unavailable">Issued</span>
+            </div>
+
+            <div class="book-card">
+                <img src="https://placehold.co/180x230/86556b/ffffff?text=Literature"
+                     alt="Literature book cover">
+                <h3>World Literature</h3>
+                <p>Author: Emily Rose</p>
+                <span class="available">Available</span>
+            </div>
+
+            <div class="book-card">
+                <img src="https://placehold.co/180x230/99713c/ffffff?text=History"
+                     alt="History book cover">
+                <h3>World History</h3>
+                <p>Author: Robert Green</p>
+                <span class="available">Available</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Book Catalog Table -->
+    <section id="catalog">
+        <h2>Book Catalog</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Book Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B101</td>
+                        <td>Python Programming</td>
+                        <td>John Smith</td>
+                        <td>Programming</td>
+                        <td class="available">Available</td>
+                    </tr>
+                    <tr>
+                        <td>B102</td>
+                        <td>Introduction to Science</td>
+                        <td>David Brown</td>
+                        <td>Science</td>
+                        <td class="unavailable">Issued</td>
+                    </tr>
+                    <tr>
+                        <td>B103</td>
+                        <td>World Literature</td>
+                        <td>Emily Rose</td>
+                        <td>Literature</td>
+                        <td class="available">Available</td>
+                    </tr>
+                    <tr>
+                        <td>B104</td>
+                        <td>World History</td>
+                        <td>Robert Green</td>
+                        <td>History</td>
+                        <td class="available">Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Library Rules -->
+    <section id="rules">
+        <h2>Library Rules</h2>
+        <div class="rules-box">
+            <ul>
+                <li>Maintain silence inside the library.</li>
+                <li>Carry your library ID card.</li>
+                <li>Return books before the due date.</li>
+                <li>Keep books clean and handle them carefully.</li>
+                <li>Do not damage library books.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: library@example.com</p>
+        <p>Phone: 9876543210</p>
+        <p>Address: College Library, Andhra Pradesh</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Digital Library Management System</p>
+        <p>Read More, Learn More!</p>
+    </footer>
+
+</body>
+</html>

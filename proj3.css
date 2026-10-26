@@ -1,0 +1,581 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #101052, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    font-size: 48px;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 17px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #111;
+    padding: 16px 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffca28;
+}
+
+/* Common Sections */
+.section {
+    padding: 55px 8%;
+}
+
+.section h2 {
+    color: #29236b;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Home */
+.home {
+    min-height: 450px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6),
+                        rgba(0, 0, 0, 0.6)),
+        url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1400&q=80");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.home-content {
+    max-width: 750px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 12px;
+}
+
+.home-content h2 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.home-content p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 15px;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #e65100;
+    transform: translateY(-2px);
+}
+
+/* About */
+.about {
+    background-color: white;
+}
+
+.about p {
+    text-align: center;
+    max-width: 950px;
+    margin: 0 auto 15px;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    background-color: #eeeeff;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    border-bottom: 4px solid #6a11cb;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #4527a0;
+    margin-bottom: 10px;
+}
+
+/* Events */
+.events {
+    background-color: #f0efff;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.event {
+    color: white;
+    padding: 28px;
+    min-height: 300px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+.event:hover {
+    transform: translateY(-5px);
+}
+
+.event h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.event p {
+    margin-bottom: 10px;
+}
+
+.event ul {
+    margin-left: 22px;
+}
+
+.event .button {
+    color: white;
+}
+
+/* Technical Event */
+.technical {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.68),
+                        rgba(0, 0, 0, 0.68)),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80");
+}
+
+/* Cultural Event */
+.cultural {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.68),
+                        rgba(0, 0, 0, 0.68)),
+        url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80");
+}
+
+/* Sports Event */
+.sports {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.68),
+                        rgba(0, 0, 0, 0.68)),
+        url("https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80");
+}
+
+/* Creative Event */
+.creative {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.68),
+                        rgba(0, 0, 0, 0.68)),
+        url("https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=900&q=80");
+}
+
+/* Schedule */
+.schedule {
+    background-color: white;
+}
+
+.table-box {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #29236b;
+    color: white;
+    padding: 15px;
+}
+
+td {
+    padding: 14px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f0efff;
+}
+
+tr:hover {
+    background-color: #e0dcff;
+}
+
+/* Workshops */
+.workshops {
+    background-color: #e8eaf6;
+}
+
+.workshop-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.workshop-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 5px solid #6a11cb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.workshop-card:hover {
+    transform: translateY(-5px);
+}
+
+.workshop-card h3 {
+    color: #4527a0;
+    margin-bottom: 12px;
+}
+
+.workshop-card p {
+    margin-bottom: 10px;
+}
+
+/* Coordinators */
+.coordinators {
+    background-color: white;
+}
+
+.coordinator-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.coordinator-card {
+    background-color: #f5f3ff;
+    text-align: center;
+    padding: 28px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.coordinator-icon {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.coordinator-card h3 {
+    color: #29236b;
+    margin-bottom: 8px;
+}
+
+.coordinator-card p {
+    margin: 5px 0;
+    overflow-wrap: anywhere;
+}
+
+/* Rules */
+.rules {
+    background-color: #f0efff;
+}
+
+.rules-box {
+    max-width: 850px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.rules-box ol {
+    padding-left: 25px;
+}
+
+.rules-box li {
+    padding: 8px 0;
+}
+
+/* Gallery */
+.gallery {
+    background-color: white;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.gallery-card {
+    min-height: 220px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    color: white;
+    overflow: hidden;
+}
+
+.gallery-card h3 {
+    background-color: rgba(0, 0, 0, 0.65);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.gallery-one {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80");
+}
+
+.gallery-two {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80");
+}
+
+.gallery-three {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&q=80");
+}
+
+.gallery-four {
+    background-image:
+        linear-gradient(transparent, rgba(0, 0, 0, 0.45)),
+        url("https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80");
+}
+
+/* Registration */
+.register {
+    background-color: #e8eaf6;
+}
+
+.registration {
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.registration label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.registration input:not([type="checkbox"]),
+.registration select,
+.registration textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.registration textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.registration input:focus,
+.registration select:focus,
+.registration textarea:focus {
+    outline: 2px solid #6a11cb;
+    border-color: #6a11cb;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+.checkbox label {
+    margin-top: 0;
+    font-weight: normal;
+}
+
+.registration button {
+    width: 100%;
+}
+
+/* Contact */
+.contact {
+    background-color: white;
+    text-align: center;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #11113f;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.footer h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin: 6px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .about-cards,
+    .workshop-container,
+    .coordinator-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    .header h1 {
+        font-size: 38px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 32px;
+    }
+
+    .navbar {
+        position: static;
+    }
+
+    .navbar a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 30px 5%;
+    }
+
+    .section h2 {
+        font-size: 26px;
+    }
+
+    .home {
+        min-height: 350px;
+    }
+
+    .home-content h2 {
+        font-size: 29px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .about-cards,
+    .event-container,
+    .workshop-container,
+    .coordinator-container,
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .registration {
+        padding: 20px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
